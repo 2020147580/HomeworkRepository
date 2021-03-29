@@ -1,0 +1,23 @@
+p{ font-family: 'Noto Sans KR', sans-serif; }
+
+hr.two{color: black; border: thin solid;}
+
+.welcome_box{
+	background-color: black; text-align: center; height:70px; font-size: 25pt;
+	font-weight: bold; color: white; padding: 10px; margin: 0px; margin-bottom: 5px;
+	
+}
+
+#cancel_btn{
+	background-color: red; color: white; padding: 10px; border: black; margin: 0px; 
+	width:100px; height: 50px; font-size: 15px;
+}
+
+#submit_btn{
+	background-color: #00FF00; color: black; padding: 10px; border: black; margin: 0px; 
+	width:100px; height: 50px; font-size: 15px;
+}
+
+#hyperlink_btn{
+	background-color: white; color: black;
+}
