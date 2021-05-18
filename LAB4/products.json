@@ -1,0 +1,100 @@
+{
+    "name": "필라 운동화",
+    "price": 50000,
+    "image": "shoe1.jpeg",
+    "type": "Shoes"
+},
+{
+    "name": "아디다스 운동화",
+    "price": 100000,
+    "image": "shoe2.jpeg",
+    "type": "Shoes"
+},
+{
+    "name": "크록스 샌달",
+    "price": 20000,
+    "image": "shoe3.jpeg",
+    "type": "Shoes"
+},
+{
+    "name": "반스 단화",
+    "price": 70000,
+    "image": "shoe4.jpeg",
+    "type": "Shoes"
+},
+
+
+{
+    "name": "아디다스 후드티",
+    "price": 26000,
+    "image": "top1.jpeg",
+    "type": "Tops"
+},
+{
+    "name": "NY 후드티",
+    "price": 12000,
+    "image": "top2.jpeg",
+    "type": "Tops"
+},
+{
+    "name": "필라 티셔츠",
+    "price": 5000,
+    "image": "top3.jpeg",
+    "type": "Tops"
+},
+{
+    "name": "로카 티셔츠",
+    "price": 7000,
+    "image": "top4.jpeg",
+    "type": "Tops"
+},
+{
+    "name": "흰 셔츠",
+    "price": 20000,
+    "image": "top5.jpeg",
+    "type": "Tops"
+},
+{
+    "name": "흰 맨투맨",
+    "price": 15000,
+    "image": "top6.jpeg",
+    "type": "Tops"
+},
+{
+    "name": "갈색 맨투맨",
+    "price": 17000,
+    "image": "top7.jpeg",
+    "type": "Tops"
+},
+
+
+{
+    "name": "진청바지",
+    "price": 10000,
+    "image": "bottom1.jpeg",
+    "type": "Bottoms"
+},
+{
+    "name": "청바지",
+    "price": 15000,
+    "image": "bottom2.jpeg",
+    "type": "Bottoms"
+},
+{
+    "name": "연청바지",
+    "price": 12000,
+    "image": "bottom3.jpeg",
+    "type": "Bottoms"
+},
+{
+    "name": "운동복 바지",
+    "price": 8000,
+    "image": "bottom4.jpeg",
+    "type": "Bottoms"
+},
+{
+    "name": "아디다스 운동복 바지",
+    "price": 17000,
+    "image": "bottom5.jpeg",
+    "type": "Bottoms"
+},
