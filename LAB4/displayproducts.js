@@ -7,12 +7,6 @@ fetch('https://2020147580.github.io/HomeworkRepository/LAB4/product.json ').then
   console.log('Fetch problem: ' + err.message);
 });
 
-window.onscroll = () => {
-  if (window.innerHeight + window.scrollY >= document.body.offsetHeight){
-    initialize(products);
-  }
-
-}
 
 function initialize(products) {
   const category = document.querySelector('#category');
@@ -20,80 +14,83 @@ function initialize(products) {
   const searchBtn = document.querySelector('button');
   const main = document.querySelector('main');
 
-  let lastCategory = category.value;
-  let lastSearch = '';
+  let categoryBefore = category.value;
+  let searchBefore = '';
 
-  let categoryGroup;
-  let finalGroup;
+  let categoryProducts;
+  let productToPrint;
 
-  finalGroup = products;
-  updateDisplay();
+  productToPrint = products;
+  // at first, every products have to be displayed
+  display();
 
-  categoryGroup = [];
-  finalGroup = [];
+  categoryProducts = [];
+  productToPrint = [];
 
-
+  // if find button has been clicked, display appropriate products.
   searchBtn.onclick = selectCategory;
 
   function selectCategory(e) {
+	// first, select products by category.
     e.preventDefault();
 
-    categoryGroup = [];
-    finalGroup = [];
-
-    if(category.value === lastCategory && searchTerm.value.trim() === lastSearch) {
+    categoryProducts = [];
+    productToPrint = [];
+    
+	// if category and searchterm didn't changed, no changes in html.
+    if(category.value === categoryBefore && searchTerm.value.trim() === searchBefore) {
       return;
     } else {
-      lastCategory = category.value;
-      lastSearch = searchTerm.value.trim();
+	  // if category has changed.
+      categoryBefore = category.value;
+      searchBefore = searchTerm.value.trim();
       
       if(category.value === 'All') {
-        categoryGroup = products;
-        selectProducts();
-
+        categoryProducts = products;
+        selecting();
       }
-	  else {
-        let lowerCaseType = category.value.toLowerCase();
+	  else {;
         for(let i = 0; i < products.length ; i++) {
-          if(products[i].type === lowerCaseType) {
-            categoryGroup.push(products[i]);
+          if(products[i].type === category.value.toLowerCase()) {
+            categoryProducts.push(products[i]);
           }
         }
-        selectProducts();
+        selecting();
       }
     }
   }
 
 
-  function selectProducts() {
+  function selecting() {
+	// after selecting by category, select final products to print
     if(searchTerm.value.trim() === '') {
-      finalGroup = categoryGroup;
-      updateDisplay();
+	  // every thing that came from selectCategory.
+      productToPrint = categoryProducts;
+      display();
     } else {
-      let lowerCaseSearchTerm = searchTerm.value.trim().toLowerCase();
-      for(let i = 0; i < categoryGroup.length ; i++) {
-        if(categoryGroup[i].name.indexOf(lowerCaseSearchTerm) !== -1) {
-          finalGroup.push(categoryGroup[i]);
+      for(let i = 0; i < categoryProducts.length ; i++) {
+		// if there is same term in product name, save at productToPrint.
+        if(categoryProducts[i].name.indexOf( searchTerm.value.trim().toLowerCase() ) !== -1) {
+          productToPrint.push(categoryProducts[i]);
         }
       }
-
-      updateDisplay();
+      display();
     }
 
   }
 
-  function updateDisplay() {
+  function display() {
     while (main.firstChild) {
       main.removeChild(main.firstChild);
     }
 
-    if(finalGroup.length === 0) {
+    if(productToPrint.length === 0) {
       const para = document.createElement('p');
       para.textContent = 'No results';
       main.appendChild(para);
     }else {
-      for(let i = 0; i < finalGroup.length; i++) {
-        fetchBlob(finalGroup[i]);
+      for(let i = 0; i < productToPrint.length; i++) {
+        fetchBlob(productToPrint[i]);
       }
     }
   }
@@ -104,11 +101,11 @@ function initialize(products) {
         return response.blob();
     }).then(function(blob) {
       let objectURL = URL.createObjectURL(blob);
-      showProduct(objectURL, product);
+      print(objectURL, product);
     });
   }
 
-  function showProduct(objectURL, product) {
+  function print(objectURL, product) {
     const section = document.createElement('section');
     const heading = document.createElement('h2');
     const para = document.createElement('p');
@@ -118,14 +115,11 @@ function initialize(products) {
     button.textContent= 'Click to see more';
 
     section.setAttribute('class', product.type);
-
     heading.textContent = product.name.replace(product.name.charAt(0), product.name.charAt(0).toUpperCase());
-
     para.textContent = product.price + '원';
 
     image.src = objectURL;
     image.alt = product.name;
-
     main.appendChild(section);
 	
     function showMore(){
