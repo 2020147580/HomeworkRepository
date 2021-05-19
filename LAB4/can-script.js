@@ -1,4 +1,4 @@
-fetch('products.json').then(function(response) {
+fetch('https://2020147580.github.io/HomeworkRepository/LAB4/product.json ').then(function(response) {
   return response.json();
 }).then(function(json) {
   let products = json;
@@ -99,7 +99,7 @@ function initialize(products) {
   }
 
   function fetchBlob(product) {
-    let url = 'images/' + product.image;
+    let url = 'https://2020147580.github.io/HomeworkRepository/LAB4/' + product.image;
     fetch(url).then(function(response) {
         return response.blob();
     }).then(function(blob) {
