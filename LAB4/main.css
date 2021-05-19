@@ -22,7 +22,7 @@ hr.three{ color: gray; border: thin solid; }
 	background-color: white; color: black;
 }
 
-#mainpage_btn{
+.mainpage_btn{
 	background-color: white; border-bottom-color: black; border-top-color: black;
 	border-right: transparent; border-left: transparent;
 }
@@ -32,48 +32,14 @@ hr.three{ color: gray; border: thin solid; }
 	margin: 0 auto;
 }
 
-/* text sliding left to right*/
-.slide-left{
-	animation: move;
-	animation-duration: 2s;
+
+aside {
+    width: 30%;
+    float: left;
 }
 
-@keyframes move{
-	from{
-		margin-left: 100%;
-		width: 300%; 
-	}
+ul li {list-style-type: none; display: inline; margin-right: 10px;}
 
-	to {
-		margin-left: 0%;
-		width: 100%;
-	}
+section img{
+	max-width: 200px; max-height: 200px;
 }
-/* text sliding left to right end*/
-
-/* product picture box */
-#product_wrap{
-	display:block;
-	width: 200px; height: 200px;
-	border: 1px solid gray;
-}
-
-#product{
-	width: 100px; height: 100px;
-	transition: transform 2s;
-	transform-origin: top left;
-}
-
-#product:hover{
-	transform: scale(2,2);
-	transform-origin: top left;
-}
-/* product picture box end */
-
-
-/* Multicolumn Layout */
-#introducing{
-	column-count: 2; column-gap: 30px; column-width: 300px;
-	column-rule-style: solid; column-rule-width: 1px;
-}
-/* Multicolumn Layout end*/
