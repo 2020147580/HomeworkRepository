@@ -8,19 +8,19 @@
 	{
 		"name": "아디다스 운동화",
 		"price": 100000,
-		"image": "shoe2.jpeg",
+		"image": "shoe2.jpg",
 		"type": "shoes"
 	},
 	{
 		"name": "크록스 샌달",
 		"price": 20000,
-		"image": "shoe3.jpeg",
+		"image": "shoe3.jpg",
 		"type": "shoes"
 	},
 	{
 		"name": "반스 단화",
 		"price": 70000,
-		"image": "shoe4.jpeg",
+		"image": "shoe4.jpg",
 		"type": "shoes"
 	},
 
@@ -28,7 +28,7 @@
 	{
 		"name": "아디다스 후드티",
 		"price": 26000,
-		"image": "top1.jpeg",
+		"image": "top1.jpg",
 		"type": "tops"
 	},
 	{
@@ -46,7 +46,7 @@
 	{
 		"name": "로카 티셔츠",
 		"price": 7000,
-		"image": "top4.jpeg",
+		"image": "top4.png",
 		"type": "tops"
 	},
 	{
@@ -58,13 +58,13 @@
 	{
 		"name": "흰 맨투맨",
 		"price": 15000,
-		"image": "top6.jpeg",
+		"image": "top6.jpg",
 		"type": "tops"
 	},
 	{
 		"name": "갈색 맨투맨",
 		"price": 17000,
-		"image": "top7.jpeg",
+		"image": "top7.jpg",
 		"type": "tops"
 	},
 
