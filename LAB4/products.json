@@ -1,3 +1,4 @@
+[
 {
 	"name": "필라 운동화",
 	"price": 50000,
@@ -93,4 +94,5 @@
 	"price": 17000,
 	"image": "bottom5.jpeg",
 	"type": "bottoms"
-},
+}
+]
