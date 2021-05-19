@@ -1,4 +1,5 @@
 [
+<<<<<<< HEAD:LAB4/product.json
 	{
 		"name": "필라 운동화",
 		"price": 50000,
@@ -100,3 +101,102 @@
 		"type": "bottoms"
 	}
 ]
+=======
+{
+	"name": "필라 운동화",
+	"price": 50000,
+	"image": "shoe1.jpeg",
+	"type": "shoes"
+},
+{
+	"name": "아디다스 운동화",
+	"price": 100000,
+	"image": "shoe2.jpg",
+	"type": "shoes"
+},
+{
+	"name": "크록스 샌달",
+	"price": 20000,
+	"image": "shoe3.jpg",
+	"type": "shoes"
+},
+{
+	"name": "반스 단화",
+	"price": 70000,
+	"image": "shoe4.jpg",
+	"type": "shoes"
+},
+{
+	"name": "아디다스 후드티",
+	"price": 26000,
+	"image": "top1.jpg",
+	"type": "tops"
+},
+{
+	"name": "NY 후드티",
+	"price": 12000,
+	"image": "top2.jpeg",
+	"type": "tops"
+},
+{
+	"name": "필라 티셔츠",
+	"price": 5000,
+	"image": "top3.jpeg",
+	"type": "tops"
+},
+{
+	"name": "로카 티셔츠",
+	"price": 7000,
+	"image": "top4.png",
+	"type": "tops"
+},
+{
+	"name": "흰 셔츠",
+	"price": 20000,
+	"image": "top5.jpeg",
+	"type": "tops"
+},
+{
+	"name": "흰 맨투맨",
+	"price": 15000,
+	"image": "top6.jpg",
+	"type": "tops"
+},
+{
+	"name": "갈색 맨투맨",
+	"price": 17000,
+	"image": "top7.jpg",
+	"type": "tops"
+},
+{
+	"name": "진청바지",
+	"price": 10000,
+	"image": "bottom1.jpeg",
+	"type": "bottoms"
+},
+{
+	"name": "청바지",
+	"price": 15000,
+	"image": "bottom2.jpeg",
+	"type": "bottoms"
+},
+{
+	"name": "연청바지",
+	"price": 12000,
+	"image": "bottom3.jpeg",
+	"type": "bottoms"
+},
+{
+	"name": "운동복 바지",
+	"price": 8000,
+	"image": "bottom4.jpeg",
+	"type": "bottoms"
+},
+{
+	"name": "아디다스 운동복 바지",
+	"price": 17000,
+	"image": "bottom5.jpeg",
+	"type": "bottoms"
+}
+]
+>>>>>>> 9bc9c071a3beb10daf2eda51ba7b26956f21aef3:LAB4/products.json
