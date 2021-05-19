@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<!--sign up site-->
+<html>
+	<head>
+		<title>Sign up</title> 
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+		<link rel = "stylesheet" type = "text/css" href = "main.css">
+	</head>
+	
+	<body>
+		<p class = "welcome_box"> Welcome to Internet Programming Shop!</p>
+		<!-- 로그인 버튼과 회원가입 버튼 -->
+		
+		<button id = "hyperlink_btn" type = "button" onclick = "location.href = ' login.html ' ">로그인하기</button>
+		
+		<hr class = "two">
+		<!--개인정보 입력-->
+		<form method = "GET">
+			<p>
+				<label>회원가입</label>
+			</p>			
+			<p>
+				<label>개인정보 입력</label>
+			</p>
+			<p>
+				<label>이름(name): <input name = "name" type = "text" placeholder = "이름을 입력하세요" size = "25" required autofocus> </label>
+			</p>
+			<p>
+				<label>생일(birth): <input name = "birth" type = "date" required></label>
+			</p>
+			<p>
+				<label>학년(grade): 
+					<select name = "grade" required>
+						<option>4</option>
+						<option>3</option>
+						<option>2</option>
+						<option>1</option>
+					</select>
+				</label>
+			</p>
+			<p>
+				<label>전화번호(Tel): <input name = "tel" type = "tel" placeholder = "###-####-####" pattern = "\d{3}-\d{4}-\d{4}" required></label>
+			</p>
+			<p>
+				<label>아이디(ID): <input name = "name" type = "text" size = "25" placeholder = "아이디를 입력하세요" autocomplete = "off" required></label>
+			</p>
+			<p>
+				<label>비밀번호(password): <input type = "password" name = "password" placeholder = "비밀번호를 입력하세요" autocomplete = "off" required></label>
+			</p>
+			<p>
+				<label>비밀번호 확인(password): <input type = "password" name = "password" placeholder = "비밀번호 확인" autocomplete = "off" required></label>
+			</p>
+		
+			<!-- submit(signup) and cancel -->
+			
+			<p>
+				<button id = "submit_btn" type = "submit" >Sign up</button>
+				<button id = "cancel_btn" type = "reset">Cancel</button>
+			</p>
+			
+		</form>
+		
+		<hr class = "two">
+
+	</body>
+
+
+</html>
